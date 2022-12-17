@@ -422,8 +422,13 @@ a {
   max-width: 160rem;
   margin: 0 auto;
   overflow: hidden;
-  height: 80vh;
+  height: 70rem;
   background-image: linear-gradient(to bottom, #01171d, black);
+}
+@media (min-width: 56.2rem) {
+  .contact {
+    height: 80vh;
+  }
 }
 .contact::after {
   content: "";
