@@ -1,0 +1,709 @@
+@charset "UTF-8";
+/* 
+-----------------------------------------------. 
+!argumento do $breakpoint                      | 
+...............................................| 
+320px - 600px  mobile phone = phone            |
+600px - 900px tablet-portrait = tab-port       |
+900px - 1200px tablet-landscape = tab-land     |
+1200px - 1800px tamanho normal do browser      |
+1800px + big desktop = big-desktop      
+xxpx/16px = xxem       |
+-----------------------------------------------°
+*/
+.header {
+  height: 80vh;
+  position: relative;
+  display: flex;
+  font-family: "Sarpanch";
+  color: #fff;
+  max-width: 160rem;
+  margin: 0 auto;
+}
+@media (min-width: 75rem) {
+  .header::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("../Img/Header.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: block;
+    opacity: 20%;
+    z-index: -1;
+    filter: blur(2px);
+  }
+}
+.header__left {
+  display: none;
+}
+@media (min-width: 75rem) {
+  .header__left {
+    display: block;
+    height: 100%;
+    width: 30%;
+  }
+}
+.header__right {
+  width: 100%;
+  height: 100%;
+  background-image: url("../Img/Header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 75rem) {
+  .header__right {
+    width: 70%;
+  }
+}
+.header__title {
+  position: absolute;
+  width: 100%;
+  top: 20rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 3px 3px 15px black;
+}
+.header__title span {
+  text-shadow: 5px 10px 4px black;
+}
+.header__title span:first-child {
+  font-size: 3.6rem;
+  font-weight: 200;
+}
+@media (min-width: 56.2rem) {
+  .header__title span:first-child {
+    position: absolute;
+    left: 4rem;
+    font-size: 4.8rem;
+    font-weight: 300;
+  }
+}
+.header__title span:nth-child(2n) {
+  top: 4rem;
+  font-size: 5.2rem;
+  font-weight: 200;
+}
+@media (min-width: 56.2rem) {
+  .header__title span:nth-child(2n) {
+    position: absolute;
+    left: 12rem;
+    font-size: 9.6rem;
+    font-weight: 400;
+  }
+}
+.header__title span:nth-child(3n) {
+  color: red;
+  top: 10rem;
+  font-size: 5.2rem;
+  font-weight: 600;
+}
+@media (min-width: 56.2rem) {
+  .header__title span:nth-child(3n) {
+    position: absolute;
+    left: 60rem;
+    font-size: 9.6rem;
+    font-weight: 700;
+    top: 13rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 47.5%;
+}
+@media (min-width: 56.2rem) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (min-width: 75rem) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media (min-width: 112.5rem) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#body {
+  background-image: linear-gradient(to bottom, black, #01171d);
+}
+
+a {
+  text-decoration: none;
+}
+
+.techs {
+  width: 100%;
+  background-image: linear-gradient(to bottom, black, #01171d);
+  padding-top: 1rem;
+  font-family: "Sarpanch";
+  color: #fff;
+  font-size: 3.6rem;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  max-width: 160rem;
+  margin: 0 auto;
+}
+.techs__banner--1 {
+  display: flex;
+  gap: 5rem;
+  animation: floatText 20s infinite linear;
+}
+.techs__banner--1 li::first-letter {
+  color: red;
+  font-weight: 700;
+}
+
+#carouselExampleInterval {
+  background-color: black;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+}
+#carouselExampleInterval .carousel-item img {
+  object-fit: contain;
+}
+#carouselExampleInterval .carousel-control-prev-icon {
+  width: 7rem;
+  height: 7rem;
+}
+#carouselExampleInterval .carousel-control-next-icon {
+  width: 7rem;
+  height: 7rem;
+}
+
+@keyframes floatText {
+  0% {
+    transform: translate(-250rem, 0);
+  }
+  100% {
+    transform: translate(80rem, 20%);
+  }
+}
+@media (min-width: 56.2rem) {
+  @keyframes floatText {
+    0% {
+      transform: translate(-220rem, 0);
+    }
+    100% {
+      transform: translate(180rem, 0);
+    }
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.about {
+  padding-top: 12rem;
+  padding-bottom: 6rem;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  gap: 6rem;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  font-family: "Sarpanch";
+  color: #fff;
+  background-image: linear-gradient(to bottom, #01171d, black);
+  max-width: 160rem;
+  margin: 0 auto;
+}
+@media (min-width: 56.2rem) {
+  .about {
+    flex-direction: row;
+    padding-inline: 2rem;
+  }
+}
+.about__title {
+  position: absolute;
+  right: 4rem;
+  top: 2rem;
+  font-size: 6rem;
+  text-shadow: 5px 5px 5px black;
+}
+.about__description {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4rem;
+}
+.about__description h2 {
+  font-size: 4.8rem;
+}
+.about__description p {
+  font-size: 2.4rem;
+  font-weight: 300;
+  max-width: 50ch;
+}
+.about__description p:last-child {
+  font-size: 3rem;
+  font-weight: 400;
+}
+.about__description a {
+  text-align: center;
+  padding-inline: 8rem;
+  place-self: end;
+}
+.about__description a::before {
+  background: #000c0f;
+}
+.about__description a i::before,
+.about__description a i::after {
+  background: #000c0f;
+}
+.about__image {
+  max-width: 60rem;
+}
+.about__image img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.projects {
+  background-image: linear-gradient(to bottom, black, #01171d);
+  padding-top: 12rem;
+  position: relative;
+  padding-bottom: 12rem;
+  max-width: 160rem;
+  margin: 0 auto;
+}
+.projects__title {
+  font-family: "Sarpanch";
+  color: #fff;
+  position: absolute;
+  right: 4rem;
+  top: 2rem;
+  font-size: 6rem;
+  text-shadow: 5px 5px 5px black;
+}
+.projects__card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  padding: 0 1.5rem;
+}
+.projects__card::after {
+  content: "";
+  width: 98%;
+  height: 98%;
+  top: 1rem;
+  left: 1rem;
+  display: block;
+  background-image: url("/assets/Img/Card.svg");
+  background-size: cover;
+  background-color: rgba(255, 0, 0, 0.6);
+  position: absolute;
+  filter: blur(15px) drop-shadow(0 0 15px rgba(4, 71, 92, 0.5)) drop-shadow(0 0 50px rgba(4, 71, 92, 0.5));
+  opacity: 0.3;
+  z-index: 10;
+}
+.projects__card_molde {
+  width: 100%;
+  z-index: 10;
+  display: none;
+  opacity: 0.6;
+}
+@media (min-width: 56.2rem) {
+  .projects__card_molde {
+    display: block;
+  }
+}
+.projects__card_molde-mobile {
+  width: 100%;
+  z-index: 10;
+  display: block;
+  opacity: 0.6;
+}
+@media (min-width: 56.2rem) {
+  .projects__card_molde-mobile {
+    display: none;
+  }
+}
+.projects__card__itens {
+  position: absolute;
+  width: 80%;
+  display: block;
+  top: 10%;
+  right: 10%;
+  z-index: 1;
+  overflow: hidden;
+}
+.projects__card__itens_img {
+  width: 100%;
+  z-index: 10;
+}
+@media (min-width: 56.2rem) {
+  .projects__card__itens_img {
+    width: 100%;
+  }
+}
+@media (min-width: 56.2rem) {
+  .projects__card__itens {
+    width: 60%;
+    top: 7rem;
+    left: 10rem;
+  }
+}
+.projects__card__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  font-family: "Sarpanch";
+  font-size: 2rem;
+  color: #fff;
+  width: 100%;
+  bottom: 1rem;
+  height: 40%;
+  z-index: 20;
+  padding: 10rem;
+  gap: 1rem;
+}
+@media (min-width: 56.2rem) {
+  .projects__card__description {
+    justify-content: space-between;
+    top: 10rem;
+    padding: 0;
+    right: 8%;
+    width: 26%;
+    height: 60%;
+    gap: 0;
+  }
+}
+.projects__card__description h2 {
+  font-size: 3rem;
+}
+@media (min-width: 37.5rem) {
+  .projects__card__description h2 {
+    font-size: 4rem;
+  }
+}
+.projects__card__description p {
+  display: none;
+}
+@media (min-width: 56.2rem) {
+  .projects__card__description p {
+    display: block;
+    padding-inline: 5rem;
+  }
+}
+
+.contact {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-top: 12rem;
+  max-width: 160rem;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 80vh;
+  background-image: linear-gradient(to bottom, #01171d, black);
+}
+.contact::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 12rem;
+  left: 0;
+  display: block;
+  position: absolute;
+  background-image: url("/assets/Img/Contact2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.4;
+  z-index: 1;
+}
+.contact__title {
+  font-family: "Sarpanch";
+  color: #fff;
+  position: absolute;
+  right: 4rem;
+  top: 2rem;
+  font-size: 6rem;
+  text-shadow: 5px 5px 5px black;
+}
+.contact__foto {
+  width: 60%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url("/assets/Img/Contact2.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+  display: none;
+}
+@media (min-width: 56.2rem) {
+  .contact__foto {
+    display: block;
+  }
+}
+.contact__form {
+  height: 50rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.contact .form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  font-family: "Sarpanch";
+  color: #fff;
+  font-size: 2rem;
+  text-shadow: 5px 5px 5px black;
+  z-index: 999;
+  gap: 2rem;
+  padding: 2rem;
+}
+@media (min-width: 37.5rem) {
+  .contact .form {
+    padding: 4rem;
+    width: 90%;
+  }
+}
+.contact .form h3 {
+  font-size: 4rem;
+}
+.contact .form::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+  z-index: -1;
+  background-image: linear-gradient(to bottom, #01171d, black);
+  filter: blur(2px);
+}
+.contact .form__group {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.contact .form__group label {
+  width: 100%;
+  display: block;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.contact .form__group label::first-letter {
+  color: red;
+}
+.contact .form__group input {
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  background-color: rgb(233, 230, 230);
+}
+.contact .form__group textarea {
+  width: 100%;
+  display: flex;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  background-color: rgb(233, 230, 230);
+}
+.contact .form__group button {
+  width: 30rem;
+  place-self: center;
+}
+@media (min-width: 37.5rem) {
+  .contact .form__group button {
+    place-self: end;
+  }
+}
+.contact .form__group button::before {
+  background: #000c0f;
+}
+.contact .form__group button i::before,
+.contact .form__group button i::after {
+  background: #000c0f;
+}
+
+.mybtn {
+  position: relative;
+  background-color: #fff;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  letter-spacing: 0.1rem;
+  padding: 1rem 3rem;
+  transition: 0.5s;
+}
+.mybtn:hover {
+  letter-spacing: 0.25rem;
+  background: red;
+  color: red;
+  box-shadow: 0 0 35px red;
+}
+.mybtn::before {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: rgb(58, 33, 33);
+}
+.mybtn span {
+  position: relative;
+  z-index: 1;
+}
+.mybtn i {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+.mybtn i::before {
+  content: "";
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 3px solid #fff;
+  left: 80%;
+  top: -0.8rem;
+  background: rgb(58, 33, 33);
+  transform: translate(-50%);
+  transition: 0.5s;
+  opacity: 0.8;
+}
+.mybtn i::after {
+  content: "";
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 3px solid #fff;
+  left: 20%;
+  bottom: -0.8rem;
+  background: rgb(58, 33, 33);
+  transform: translate(-50%);
+  transition: 0.5s;
+  opacity: 0.8;
+}
+.mybtn:hover i::before {
+  width: 3rem;
+  left: 20%;
+  border-color: red;
+}
+.mybtn:hover i::after {
+  width: 3rem;
+  left: 80%;
+  border-color: red;
+}
+
+::-webkit-scrollbar {
+  width: 1.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ccc;
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.2);
+  width: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to bottom, red, rgba(1, 23, 29, 0.9));
+  box-shadow: inset 1px 1px 2px #000;
+  border-radius: 1px;
+}
+
+.footer {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 160rem;
+  margin: 0 auto;
+  font-family: "Sarpanch";
+  color: #fff;
+  width: 100%;
+  gap: 6rem;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 2rem;
+  width: 100%;
+  align-items: center;
+  gap: 4rem;
+}
+@media (min-width: 37.5rem) {
+  .footer__contacts {
+    flex-direction: row;
+  }
+}
+.footer__contacts--media {
+  display: flex;
+  gap: 4rem;
+}
+.footer__contacts--media i {
+  color: #fff;
+  font-size: 4rem;
+}
+.footer__contacts--media i:hover {
+  color: red;
+  text-shadow: 0 0 1rem red;
+}
+.footer__contacts--contacts p {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.footer__contacts--contacts p i {
+  color: red;
+}
+.footer__copy {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  font-size: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.footer__copy a {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  text-decoration: none;
+  color: red;
+  transition: ease 0.2s;
+}
+.footer__copy a:hover {
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

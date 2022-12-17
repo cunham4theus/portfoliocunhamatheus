@@ -1,0 +1,88 @@
+@use 'mixins' as *;
+
+.techs {
+  width: 100%;  
+  background-image: linear-gradient(
+    to bottom,
+    rgba(#000000, 1),
+    rgba(#01171d, 1)
+  );
+  padding-top: 1rem;  
+  font-family: 'Sarpanch';
+  color: #fff;
+  font-size: 3.6rem;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto; 
+  @include container-size;
+
+
+  &__banner--1 {
+    display: flex;
+    gap: 5rem;
+    animation: floatText 20s infinite linear; 
+
+    li::first-letter {
+      color: red;
+      font-weight: 700;      
+    }
+  }
+
+}
+
+// Carousel Techs
+
+#carouselExampleInterval {
+  background-color: black;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+
+  .carousel-item {
+    
+    img {
+      object-fit: contain;
+    }
+  }
+
+  .carousel-control-prev-icon {    
+    width: 7rem;
+    height: 7rem;
+  }
+
+  .carousel-control-next-icon {   
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+
+
+@keyframes floatText {
+  0% {
+    transform: translate(-250rem, 0);
+  }
+  100% {
+    transform: translate(80rem, 20%);
+  } 
+}
+
+@include respond(tab-port) {
+  @keyframes floatText {
+    0% {
+      transform: translate(-220rem, 0);
+    }
+    100% {
+      transform: translate(180rem, 0);
+    }     
+  }   
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,34 @@
+@use 'mixins' as *;
+
+html {
+  scroll-behavior: smooth;
+  font-size: 47.5%;
+
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+
+  @include respond(tab-land) {
+    font-size: 62.5%;
+  }
+
+  @include respond(big-desktop) {
+    font-size: 75%;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#body {
+  background-image: linear-gradient(
+    to bottom,    
+    rgba(#000000, 1),
+    rgba(#01171d, 1),   
+  );
+}
+a {
+  text-decoration: none;
+}

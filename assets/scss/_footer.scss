@@ -1,0 +1,76 @@
+@use 'mixins' as *;
+
+.footer {
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  @include container-size;
+  font-family: 'Sarpanch';
+  color: #fff;
+  width: 100%;
+  gap: 6rem;
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 2rem;
+    width: 100%;
+    align-items: center;
+    gap: 4rem;
+
+    @include respond(phone) {
+      flex-direction: row;
+    }
+
+    &--media {
+      display: flex;
+      gap: 4rem;
+      i {
+        color: #fff;
+        font-size: 4rem;
+        &:hover {
+          color: red;
+          text-shadow: 0 0 1rem red;
+        }
+      }
+    }
+
+    &--contacts {
+      p {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        i{
+          color: red;
+        }
+      }
+      
+    }
+  }
+
+  &__copy {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    font-size: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    a {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      text-decoration: none;
+      color: red;
+      transition: ease .2s;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+}

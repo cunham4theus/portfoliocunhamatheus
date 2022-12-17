@@ -1,0 +1,167 @@
+@use 'mixins' as *;
+
+.contact {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-top: 12rem;
+  @include container-size;
+  overflow: hidden;  
+  height: 80vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(#01171d, 1),
+    rgba(#000000, 1)
+  ); 
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 12rem;
+    left: 0;
+    display: block;
+    position: absolute;
+    background-image: url('/assets/Img/Contact2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+    z-index: 1;
+  }
+
+  &__title {
+    font-family: 'Sarpanch';
+    color: #fff;
+    position: absolute;
+    right: 4rem;
+    top: 2rem;
+    font-size: 6rem;
+    text-shadow: 5px 5px 5px black;
+  }
+
+  &__foto {
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url('/assets/Img/Contact2.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    display: none;
+
+    @include respond(tab-port) {
+      display: block;      
+    }
+  }
+
+  &__form {
+    height: 50rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+   
+   
+  }
+
+  // form
+
+  .form {  
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    position: relative;
+    font-family: 'Sarpanch';
+    color: #fff;    
+    font-size: 2rem;
+    text-shadow: 5px 5px 5px black;
+    z-index: 999;
+    gap: 2rem;
+   
+    padding: 2rem;
+    
+    @include respond(phone) {      
+      padding: 4rem;
+      width: 90%;
+    }
+    
+   
+
+    h3 {
+      font-size: 4rem;
+    }
+
+    &::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: block;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.6;
+      z-index: -1;
+      background-image: linear-gradient(
+        to bottom,
+        rgba(#01171d, 1),
+        rgba(#000000, 1)
+      );
+      filter: blur(2px);
+    }
+
+    &__group {
+      width: 100%;
+     display: flex;
+     flex-direction: column;
+     
+      
+      label {
+        width: 100%;
+        display: block;
+        font-size: 3rem;
+        font-weight: 500;
+
+        &::first-letter {
+          color: red;
+        }
+      }
+
+      input {
+        width: 100%;
+        display: flex;
+        padding: 1rem;
+        border-radius: .6rem;
+        background-color: rgb(233, 230, 230);
+      }
+
+      textarea {
+        width: 100%;
+        display: flex;
+        padding: 1rem;
+        border-radius: .6rem;       
+        background-color: rgb(233, 230, 230); 
+      }
+
+      button {
+        width: 30rem;
+        place-self: center;
+
+        @include respond(phone) {
+          place-self: end;
+        }
+        
+
+        &::before {
+          background: #000c0f;
+        }
+        i::before,
+        i::after {
+          background: #000c0f
+        }
+      }
+    }
+  }
+}
