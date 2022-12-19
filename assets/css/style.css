@@ -78,7 +78,7 @@ a {
   display: flex;
   font-family: "Sarpanch";
   color: #fff;
-  max-width: 160rem;
+  max-width: 144rem;
   margin: 0 auto;
   border-bottom: 10px inset black;
   position: relative;
@@ -110,7 +110,7 @@ a {
   top: -0.5rem;
   z-index: 999;
   align-items: center;
-  max-width: 160rem;
+  max-width: 144rem;
   margin: 0 auto;
   border-bottom: 10px inset black;
 }
@@ -256,7 +256,7 @@ a {
   max-width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  max-width: 160rem;
+  max-width: 144rem;
   margin: 0 auto;
   border-bottom: 10px inset black;
 }
@@ -342,7 +342,7 @@ a {
   gap: 6rem;
   align-items: center;
   background-image: linear-gradient(to bottom, #01171d, black);
-  max-width: 160rem;
+  max-width: 144rem;
   margin: 0 auto;
   border-bottom: 10px inset black;
 }
@@ -401,7 +401,7 @@ a {
   padding-top: 12rem;
   padding-bottom: 12rem;
   position: relative;
-  max-width: 160rem;
+  max-width: 144rem;
   margin: 0 auto;
   border-bottom: 10px inset black;
 }
@@ -544,7 +544,7 @@ a {
   position: relative;
   align-items: center;
   padding-top: 12rem;
-  max-width: 160rem;
+  max-width: 144rem;
   margin: 0 auto;
   border-bottom: 10px inset black;
   overflow: hidden;
@@ -703,7 +703,7 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  max-width: 160rem;
+  max-width: 144rem;
   margin: 0 auto;
   border-bottom: 10px inset black;
   border: none;
