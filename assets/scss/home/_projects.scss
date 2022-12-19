@@ -24,11 +24,13 @@
 
     &__card {
       max-width: 45rem;
+      padding: 4rem 0;
       display: grid;
+      gap: 1rem;
       grid-template-rows: 20rem 30rem;
       box-shadow: 0 0 40px black;
       border: 1px solid black;
-      background-color: $mycolor-primary-dark;
+      background-image: linear-gradient(to bottom, lighten($mycolor-primary-dark, 4%),darken($mycolor-primary-dark, 2%));
       
 
       &--image {
