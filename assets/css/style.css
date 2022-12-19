@@ -73,7 +73,7 @@ a {
   display: flex;
   font-family: "Sarpanch";
   color: #fff;
-  max-width: 140rem;
+  max-width: 144rem;
   margin: 0 auto;
   border-bottom: 10px inset black;
   position: relative;
@@ -105,7 +105,7 @@ a {
   top: -0.5rem;
   z-index: 999;
   align-items: center;
-  max-width: 140rem;
+  max-width: 144rem;
   margin: 0 auto;
   border-bottom: 10px inset black;
 }
@@ -251,7 +251,7 @@ a {
   max-width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  max-width: 140rem;
+  max-width: 144rem;
   margin: 0 auto;
   border-bottom: 10px inset black;
 }
@@ -337,7 +337,7 @@ a {
   gap: 6rem;
   align-items: center;
   background-image: linear-gradient(to bottom, #01171d, black);
-  max-width: 140rem;
+  max-width: 144rem;
   margin: 0 auto;
   border-bottom: 10px inset black;
 }
@@ -373,8 +373,13 @@ a {
 }
 .about__description a {
   text-align: center;
-  padding-inline: 8rem;
   place-self: end;
+  font-size: 3rem;
+}
+@media (min-width: 56.2rem) {
+  .about__description a {
+    padding-inline: 4rem;
+  }
 }
 .about__description a::before {
   background: #000c0f;
@@ -396,7 +401,7 @@ a {
   padding-top: 12rem;
   padding-bottom: 12rem;
   position: relative;
-  max-width: 140rem;
+  max-width: 144rem;
   margin: 0 auto;
   border-bottom: 10px inset black;
 }
@@ -415,16 +420,15 @@ a {
   padding: 2rem;
 }
 .projects__gallery__card {
-  height: 70rem;
-  max-width: 60rem;
+  max-width: 45rem;
   display: grid;
+  grid-template-rows: 20rem 30rem;
   box-shadow: 0 0 40px black;
   border: 1px solid black;
   background-color: #01171d;
 }
 .projects__gallery__card--image {
   overflow: hidden;
-  height: 30rem;
 }
 .projects__gallery__card--image img {
   object-fit: cover;
@@ -439,9 +443,8 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 2rem;
-  padding: 2rem;
-  height: 40rem;
+  padding-inline: 2rem;
+  height: 100% rem;
 }
 .projects__gallery__card--description h2 {
   font-size: 4rem;
@@ -451,9 +454,16 @@ a {
 }
 .projects__gallery__card--description a {
   text-align: center;
-  padding-inline: 8rem;
+  padding-inline: 4rem;
+  font-size: 2.4rem;
   place-self: end;
   align-self: end;
+}
+@media (min-width: 56.2rem) {
+  .projects__gallery__card--description a {
+    font-size: 2.8rem;
+    padding-inline: 6rem;
+  }
 }
 .projects__gallery__card--description a::before {
   background: #000c0f;
@@ -468,13 +478,8 @@ a {
   background-color: #fff;
   text-decoration: none;
   letter-spacing: 0.1rem;
-  padding: 1rem 3rem;
+  padding: 0.2rem 0.8rem;
   transition: 0.5s;
-}
-@media (min-width: 56.2rem) {
-  .mybtn {
-    padding: 0.5rem 1.5rem;
-  }
 }
 .mybtn:hover {
   letter-spacing: 0.25rem;
@@ -539,7 +544,7 @@ a {
   position: relative;
   align-items: center;
   padding-top: 12rem;
-  max-width: 140rem;
+  max-width: 144rem;
   margin: 0 auto;
   border-bottom: 10px inset black;
   overflow: hidden;
@@ -611,7 +616,7 @@ a {
 @media (min-width: 37.5rem) {
   .contact .form {
     padding: 4rem;
-    width: 90%;
+    width: 98%;
   }
 }
 .contact .form h3 {
@@ -663,10 +668,13 @@ a {
 .contact .form__group button {
   width: 20rem;
   place-self: center;
+  padding: 0.2rem 0;
+  font-size: 3.4rem;
 }
 @media (min-width: 37.5rem) {
   .contact .form__group button {
     place-self: end;
+    font-size: 4rem;
   }
 }
 .contact .form__group button::before {
@@ -698,7 +706,7 @@ a {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  max-width: 140rem;
+  max-width: 144rem;
   margin: 0 auto;
   border-bottom: 10px inset black;
   border: none;

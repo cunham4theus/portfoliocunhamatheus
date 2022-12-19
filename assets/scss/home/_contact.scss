@@ -79,7 +79,7 @@
     
     @include respond(phone) {      
       padding: 4rem;
-      width: 90%;
+      width: 98%;
     }
     
    
@@ -144,9 +144,12 @@
       button {
         width: 20rem;
         place-self: center;
+        padding: .2rem 0;
+        font-size: 3.4rem;
 
         @include respond(phone) {
-          place-self: end;
+          place-self: end;  
+          font-size: 4rem;        
         }
         
 

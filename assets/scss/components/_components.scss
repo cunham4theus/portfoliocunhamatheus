@@ -6,10 +6,10 @@
   background-color: #fff;
   text-decoration: none; 
   letter-spacing: .1rem;
-  padding: 1rem 3rem;
+  padding: .2rem .8rem;
   transition: .5s;
   @include respond(tab-port) {
-    padding: .5rem 1.5rem;
+    
   }
 
   
