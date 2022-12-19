@@ -1,10 +1,13 @@
-@use 'header';
-@use 'globals';
-@use 'mixins';
-@use 'techs';
-@use 'about';
-@use 'projects';
-@use 'form';
-@use 'components';
-@use 'bar';
-@use 'footer';
+@use './components/variables';
+@use './components/globals';
+@use './home/header';
+@use './components/mixins';
+@use './home/techs';
+@use './home/about';
+@use './home/projects';
+@use './components/components';
+@use './home/contact';
+@use './components/bar';
+@use './home/footer';
+// page techs
+@use './pageTechs/page-techs';

@@ -1,4 +1,5 @@
 @use 'mixins' as *;
+@use 'variables' as *;
 
 html {
   scroll-behavior: smooth;
@@ -17,17 +18,20 @@ html {
   }
 }
 
-body {
+
+
+body {  
   padding: 0;
   margin: 0;
-}
-
-#body {
   background-image: linear-gradient(
     to bottom,    
-    rgba(#000000, 1),
-    rgba(#01171d, 1),   
+    rgba($mycolor-primary-dark, 1),
+    rgba($mycolor-primary-dark-2, 1),   
   );
+  position: relative;
+}
+li {
+  list-style: none;
 }
 a {
   text-decoration: none;

@@ -1,4 +1,4 @@
-@use 'mixins' as *;
+@use '../components/mixins' as *;
 
 .contact {
   display: flex;
@@ -33,13 +33,7 @@
   }
 
   &__title {
-    font-family: 'Sarpanch';
-    color: #fff;
-    position: absolute;
-    right: 4rem;
-    top: 2rem;
-    font-size: 6rem;
-    text-shadow: 5px 5px 5px black;
+    @include section-title;
   }
 
   &__foto {
@@ -148,7 +142,7 @@
       }
 
       button {
-        width: 30rem;
+        width: 20rem;
         place-self: center;
 
         @include respond(phone) {

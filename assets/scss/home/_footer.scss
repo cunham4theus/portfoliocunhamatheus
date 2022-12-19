@@ -1,4 +1,4 @@
-@use 'mixins' as *;
+@use '../components/mixins' as *;
 
 .footer {
   padding: 4rem 0;
@@ -7,6 +7,7 @@
   justify-content: space-around;
   align-items: center;
   @include container-size;
+  border: none;
   font-family: 'Sarpanch';
   color: #fff;
   width: 100%;

@@ -1,19 +1,21 @@
-@use 'mixins' as *;
+@use '../components/mixins' as *;
+@use '../components/variables' as *;
 
 .header {
   height: 80vh;
   position: relative;
   display: flex;
-  font-family: "Sarpanch";
+  font-family: 'Sarpanch';
   color: #fff;
   @include container-size;
+  position: relative;
 
   @include respond(tab-land) {
     &::after {
       content: '';
       width: 100%;
       height: 100%;
-      background-image: url('../Img/Header.jpg');     
+      background-image: url('../Img/Header.jpg');
       background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
@@ -24,6 +26,64 @@
       opacity: 20%;
       z-index: -1;
       filter: blur(2px);
+    }
+  }
+
+  &__nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 999;
+    align-items: center;
+
+    &::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      display: block;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 5;
+      z-index: -1;
+      background-image: linear-gradient(
+        to bottom,
+        rgba(#01171d, .8),
+        rgba(#000000, .8)
+      );
+      filter: blur(2px);
+    }
+
+    &--logo {
+      font-size: 6rem;
+      font-weight: 400;
+      letter-spacing: 0.3rem;
+      color: $mycolor-primary;
+      text-shadow: 1px 1px 5px $mycolor-primary-dark;
+
+      a {
+        color: $mycolor-primary;
+        transition: ease-in .2s;
+        &:hover{
+          color: lighten($mycolor-primary, 5%);
+        }
+      }
+    }
+
+    &--list {
+      display: flex;
+      gap: 3rem;
+
+      a {
+        color: $mycolor-primary-light;
+        transition: ease-in .2s;
+        &:hover {
+          color: $mycolor-primary;
+        }
+      }
     }
   }
 
@@ -56,10 +116,9 @@
     flex-direction: column;
     text-align: center;
     box-shadow: 3px 3px 15px black;
-   
 
     span {
-      text-shadow: 5px 10px 4px black;     
+      text-shadow: 5px 10px 4px black;
 
       &:first-child {
         font-size: 3.6rem;
@@ -75,8 +134,9 @@
 
       &:nth-child(2n) {
         top: 4rem;
-        font-size: 5.2rem;
+        font-size: 5.6rem;
         font-weight: 200;
+        color: red;
 
         @include respond(tab-port) {
           position: absolute;
@@ -86,20 +146,18 @@
         }
       }
       &:nth-child(3n) {
-        color: red;
         top: 10rem;
-        font-size: 5.2rem;
+        font-size: 5.6rem;
         font-weight: 600;
 
         @include respond(tab-port) {
           position: absolute;
           left: 60rem;
           font-size: 9.6rem;
-          font-weight: 700;
+          font-weight: 500;
           top: 13rem;
         }
       }
     }
-   
   }
 }

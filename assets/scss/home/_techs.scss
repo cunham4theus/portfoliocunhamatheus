@@ -1,4 +1,4 @@
-@use 'mixins' as *;
+@use '../components/mixins' as *;
 
 .techs {
   width: 100%;  
@@ -7,28 +7,39 @@
     rgba(#000000, 1),
     rgba(#01171d, 1)
   );
-  padding-top: 1rem;  
-  font-family: 'Sarpanch';
-  color: #fff;
-  font-size: 3.6rem;
+  padding-top: 12rem;
+  position: relative;
+
+  margin: 0 auto;  
   max-width: 100%;
   overflow: hidden;
-  white-space: nowrap;
-  margin: 0 auto; 
+  white-space: nowrap; 
   @include container-size;
 
-
+  &__title {
+    @include section-title;
+  }
   &__banner--1 {
     display: flex;
     gap: 5rem;
     animation: floatText 20s infinite linear; 
-
-    li::first-letter {
-      color: red;
-      font-weight: 700;      
-    }
   }
 
+  &__text {
+    padding: 2rem;    
+  }
+
+  p {
+    font-size: 2.2rem;
+    a {
+      font-size: 2.2rem;
+      transition: ease .2s;
+      &:hover {
+        text-decoration: underline;
+        color: red;
+      }
+    }
+  }
 }
 
 // Carousel Techs

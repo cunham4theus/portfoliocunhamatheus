@@ -1,0 +1,40 @@
+@use 'mixins' as *;
+
+
+// colors
+$mycolor-primary: #ee1000;
+$mycolor-primary-dark: #01171d;
+$mycolor-primary-dark-2: #000c0f;
+$mycolor-primary-light: #fcefefe7;
+
+
+// fonts
+
+.mycl-primary {
+  color: $mycolor-primary;
+}
+
+.myfont__default {
+  font: 500 2rem 'Sarpanch';  
+  color: $mycolor-primary-light;  
+}
+
+.myfont__title-section {
+  font: 400 2rem/1 'Sarpanch';
+  text-transform: uppercase;
+}
+.myfont__detailed {
+  font: 500 3.8rem/1.5 'Sarpanch';
+  color: $mycolor-primary-light;
+  @include respond(tab-land) {
+    font-size: 3.2rem;
+  }
+
+  &::first-letter  {
+    color: $mycolor-primary;
+  }
+
+  @include respond(phone) {
+    
+  }
+}

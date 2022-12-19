@@ -1,6 +1,5 @@
 
 
-
 // !MÉDIA
 /* 
 -----------------------------------------------. 
@@ -45,4 +44,14 @@ xxpx/16px = xxem       |
 @mixin container-size {
   max-width: 160rem;
   margin: 0 auto;
+  border-bottom: 10px inset rgb(black, 1);
+ 
+}
+
+@mixin section-title{
+  position: absolute;
+  right: 4rem;
+  top: 2rem;
+  font-size: 6rem;
+  text-shadow: 5px 5px 5px black;  
 }
