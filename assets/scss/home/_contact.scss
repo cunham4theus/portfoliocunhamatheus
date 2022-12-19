@@ -64,7 +64,7 @@
   // form
 
   .form {  
-    width: 80%;
+    width: 96%;
     display: flex;
     flex-direction: column;
     justify-content: center;    
@@ -79,7 +79,7 @@
     
     @include respond(phone) {      
       padding: 4rem;
-      width: 98%;
+      width: 80%;
     }
     
    
