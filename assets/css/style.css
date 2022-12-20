@@ -158,6 +158,7 @@ main {
   max-width: 160rem;
   margin: 0 auto;
   border-bottom: 10px inset black;
+  padding-inline: 4rem;
 }
 @media (min-width: 56.2rem) {
   .header__nav {
