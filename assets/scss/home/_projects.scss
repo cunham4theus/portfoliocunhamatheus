@@ -40,10 +40,10 @@
           object-fit: cover;
           max-width: 100%;
           transition: ease 0.3s;
-          height: 40rem;
+          height: 40rem;         
 
           &:hover {
-            transform: rotate(-3deg) scale(1.1);
+            transform: rotate(-3deg) scale(1.1);           
           }
         }
       }

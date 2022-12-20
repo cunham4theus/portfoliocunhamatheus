@@ -13,6 +13,8 @@
     "sass": "^1.56.2"
   },
   "dependencies": {
-    "bootstrap": "^5.2.3"
+    "@barba/core": "^2.9.7",
+    "bootstrap": "^5.2.3",
+    "gsap": "^3.11.3"
   }
 }

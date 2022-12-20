@@ -20,13 +20,19 @@
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
-<body class="body myfont__default">
+<body class="body myfont__default" data-barba="wrapper">
 
-  <header class="header" id="header">
+  <div class="load-container">
+    <div class="loading-screen"></div>
+  </div>
+
+
+<main class="main-container animate-this" data-barba="container">
+  <header class="header " id="header" data-barba-namespace="home-section">
     <nav class="header__nav">
       <div class="header__nav--logo"><a href="">Portfólio</a></div>
       <ul class="header__nav--list">
-        <li class="myfont__detailed"><a href="#techs">Techs</a> </li>
+        <li class="myfont__detailed"><a href="./techs.html">Techs</a> </li>
         <li class="myfont__detailed"><a href="#about">Sobre</a></li>
         <li class="myfont__detailed"><a href="#projects">Projetos</a></li>
         <li class="myfont__detailed"><a href="#contact">Contato</a></li>
@@ -35,14 +41,14 @@
 
     <div class="header__left"></div>
     <div class="header__right"></div>
-    <h1 class="header__title">
+    <h1 class="header__title animate-this">
       <span>Matheus Brenner</span>
       <span>Desenvolvedor</span>
       <span>Frontend</span>
     </h1>
   </header>
 
-  <section class="techs myfont__default">
+  <section class="techs  myfont__default">
     <h1 class="techs__title " id="techs">Techs</h1>
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
@@ -110,7 +116,7 @@
     <p class="techs__text myfont__default">Clique <a class="mycl-primary" href="./techs.html">aqui</a> para saber mais sobre as Techs</p>
 
   </section>
-  <section class="about" id="about">
+  <section class="about " id="about">
     <h1 class="about__title">Sobre</h1>
     <div class="about__description">
       <h2 class="myfont__detailed">Olá!</h2>
@@ -125,7 +131,7 @@
       <img src="/assets/Img/Hero.jpg" alt="">
     </div>
   </section>
-  <section class="projects" id="projects">
+  <section class="projects " id="projects">
     <h1 class="projects__title">Projetos</h1>
     <div class="projects__gallery">
       <div class="projects__gallery__card">
@@ -220,7 +226,7 @@
 
 
   </section>
-  <section class="contact" id="contact">
+  <section class="contact " id="contact">
     <h1 class="contact__title">Contato</h1>
     <div class="contact__foto">
     </div>
@@ -241,7 +247,7 @@
       </form>
     </div>
   </section>
-  <footer class="footer" id="footer">
+  <footer class="footer " id="footer">
     <div class="footer__contacts">
       <div class="footer__contacts--media">
         <a class="media-github" href="https://github.com/cunham4theus" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -258,10 +264,16 @@
       <a href="#header"><i class="fa-solid fa-angles-up"></i>Voltar ao topo</a>
     </div>
   </footer>
+</main>
 
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-
+  <!-- BarbaJS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+  <!-- MY Script -->
+  <script src="./assets/js/app.js"></script>
 </body>
 
 </html>

@@ -18,20 +18,25 @@
   <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
-<body class="body myfont__default">
-  <header class="header" id="header">
+<body class="body myfont__default" data-barba="wrapper">
+  <div class="load-container">
+    <div class="loading-screen"></div>
+  </div>
+
+<main class="main-container animate-this" data-barba="container">
+  <header class="header " id="header" data-barba-namespace="techs-section">
     <nav class="header__nav">
-      <div class="header__nav--logo"><a href="./index.html">Portfólio</a></div>
+      <div class="header__nav--logo"><a href="">Portfólio</a></div>
       <ul class="header__nav--list">
-        <li class="myfont__detailed"><a href="./index.html">Início</a> </li>     
+        <li class="myfont__detailed"><a href="./index.html">Início</a> </li>
         <li class="myfont__detailed"><a href="./index.html#projects">Projetos</a></li>
         <li class="myfont__detailed"><a href="#contact">Contato</a></li>
       </ul>
     </nav>
-    
+
     <div class="header__left"></div>
     <div class="header__right"></div>
-    <h1 class="header__title">
+    <h1 class="header__title animate-this" >
       <span>Matheus Brenner</span>
       <span>Desenvolvedor</span>
       <span>Frontend</span>
@@ -215,9 +220,16 @@
       <a href="#header"><i class="fa-solid fa-angles-up"></i>Voltar ao topo</a>
     </div>
   </footer>
+</main>
 
   <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <!-- BarbaJS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://unpkg.com/@barba/core"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+  <!-- MY Script -->
+  <script src="./assets/js/app.js"></script>
 </body>
 
 </html>
