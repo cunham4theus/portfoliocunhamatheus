@@ -11,7 +11,7 @@
   justify-content: center;
   gap: 6rem;
   align-items: center;
-  padding-inline: 2rem ;
+  padding-inline: 4rem ;
 
   background-image: linear-gradient(
     to bottom,
@@ -55,7 +55,7 @@
       font-size: 3rem;
       padding-inline: 4rem;
       @include respond(tab-port) {
-        padding-inline: 4rem;
+        padding-inline: 8rem;
       }
 
       &::before {

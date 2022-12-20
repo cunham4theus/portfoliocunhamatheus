@@ -300,8 +300,6 @@ main {
   position: relative;
   margin: 0 auto;
   max-width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
   max-width: 144rem;
   margin: 0 auto;
   border-bottom: 10px inset black;
@@ -312,6 +310,10 @@ main {
   top: 2rem;
   font-size: 6rem;
   text-shadow: 5px 5px 5px black;
+}
+.techs__banner {
+  overflow: hidden;
+  white-space: nowrap;
 }
 .techs__banner--1 {
   display: flex;
@@ -369,14 +371,6 @@ main {
     }
   }
 }
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .about {
   padding-top: 12rem;
   position: relative;
@@ -387,7 +381,7 @@ main {
   justify-content: center;
   gap: 6rem;
   align-items: center;
-  padding-inline: 2rem;
+  padding-inline: 4rem;
   background-image: linear-gradient(to bottom, #01171d, black);
   max-width: 144rem;
   margin: 0 auto;
@@ -431,7 +425,7 @@ main {
 }
 @media (min-width: 56.2rem) {
   .about__description a {
-    padding-inline: 4rem;
+    padding-inline: 8rem;
   }
 }
 .about__description a::before {
@@ -509,16 +503,16 @@ main {
 }
 .projects__gallery__card--description a {
   text-align: center;
-  padding-inline: 4rem;
+  padding-inline: 8rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-size: 2.6rem;
-  width: 100%;
+  place-self: center;
+  place-items: center;
 }
 @media (min-width: 56.2rem) {
   .projects__gallery__card--description a {
     font-size: 2.8rem;
-    padding-inline: 6rem;
     width: auto;
     place-self: end;
     place-items: end;

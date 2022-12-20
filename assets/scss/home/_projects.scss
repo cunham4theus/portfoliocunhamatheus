@@ -17,7 +17,7 @@
   }
   &__gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));     
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     place-items: center;
     gap: 6rem 4rem;
     padding: 2rem;
@@ -30,20 +30,23 @@
       grid-template-rows: 20rem 30rem;
       box-shadow: 0 0 40px black;
       border: 1px solid black;
-      background-image: linear-gradient(to bottom, lighten($mycolor-primary-dark, 4%),darken($mycolor-primary-dark, 2%));
-      
+      background-image: linear-gradient(
+        to bottom,
+        lighten($mycolor-primary-dark, 4%),
+        darken($mycolor-primary-dark, 2%)
+      );
 
       &--image {
-        overflow: hidden;        
+        overflow: hidden;
 
         img {
           object-fit: cover;
           max-width: 100%;
           transition: ease 0.3s;
-          height: 40rem;         
+          height: 40rem;
 
           &:hover {
-            transform: rotate(-3deg) scale(1.1);           
+            transform: rotate(-3deg) scale(1.1);
           }
         }
       }
@@ -51,10 +54,9 @@
       &--description {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;       
+        justify-content: space-between;
         padding-inline: 2rem;
         height: 100%rem;
-        
 
         h2 {
           font-size: 4rem;
@@ -66,15 +68,15 @@
 
         a {
           text-align: center;
-          padding-inline: 4rem; 
-          padding-top: .5rem;
-          padding-bottom: .5rem;
-          font-size: 2.6rem;         
-          width: 100%;
-          
+          padding-inline: 8rem;
+          padding-top: 0.5rem;
+          padding-bottom: 0.5rem;
+          font-size: 2.6rem;
+          place-self: center;
+          place-items: center;
+
           @include respond(tab-port) {
-            font-size: 2.8rem;  
-            padding-inline: 6rem;
+            font-size: 2.8rem;           
             width: auto;
             place-self: end;
             place-items: end;
