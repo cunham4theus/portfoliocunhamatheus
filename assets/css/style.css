@@ -387,6 +387,7 @@ main {
   justify-content: center;
   gap: 6rem;
   align-items: center;
+  padding-inline: 2rem;
   background-image: linear-gradient(to bottom, #01171d, black);
   max-width: 144rem;
   margin: 0 auto;
@@ -426,6 +427,7 @@ main {
   text-align: center;
   place-self: end;
   font-size: 3rem;
+  padding-inline: 4rem;
 }
 @media (min-width: 56.2rem) {
   .about__description a {
@@ -508,14 +510,18 @@ main {
 .projects__gallery__card--description a {
   text-align: center;
   padding-inline: 4rem;
-  font-size: 2.4rem;
-  place-self: end;
-  align-self: end;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 2.6rem;
+  width: 100%;
 }
 @media (min-width: 56.2rem) {
   .projects__gallery__card--description a {
     font-size: 2.8rem;
     padding-inline: 6rem;
+    width: auto;
+    place-self: end;
+    place-items: end;
   }
 }
 .projects__gallery__card--description a::before {
