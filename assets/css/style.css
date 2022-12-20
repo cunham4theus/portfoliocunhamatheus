@@ -100,7 +100,7 @@ main {
   display: flex;
   font-family: "Sarpanch";
   color: #fff;
-  max-width: 144rem;
+  max-width: 160rem;
   margin: 0 auto;
   border-bottom: 10px inset black;
   position: relative;
@@ -155,7 +155,7 @@ main {
   top: -0.5rem;
   z-index: 999;
   align-items: center;
-  max-width: 144rem;
+  max-width: 160rem;
   margin: 0 auto;
   border-bottom: 10px inset black;
 }
@@ -300,7 +300,8 @@ main {
   position: relative;
   margin: 0 auto;
   max-width: 100%;
-  max-width: 144rem;
+  overflow: hidden;
+  max-width: 160rem;
   margin: 0 auto;
   border-bottom: 10px inset black;
 }
@@ -314,6 +315,9 @@ main {
 .techs__banner {
   overflow: hidden;
   white-space: nowrap;
+  max-width: 160rem;
+  margin: 0 auto;
+  border-bottom: 10px inset black;
 }
 .techs__banner--1 {
   display: flex;
@@ -383,7 +387,7 @@ main {
   align-items: center;
   padding-inline: 2rem;
   background-image: linear-gradient(to bottom, #01171d, black);
-  max-width: 144rem;
+  max-width: 160rem;
   margin: 0 auto;
   border-bottom: 10px inset black;
 }
@@ -448,7 +452,7 @@ main {
   padding-top: 12rem;
   padding-bottom: 12rem;
   position: relative;
-  max-width: 144rem;
+  max-width: 160rem;
   margin: 0 auto;
   border-bottom: 10px inset black;
 }
@@ -607,7 +611,7 @@ main {
   position: relative;
   align-items: center;
   padding-top: 12rem;
-  max-width: 144rem;
+  max-width: 160rem;
   margin: 0 auto;
   border-bottom: 10px inset black;
   overflow: hidden;
@@ -769,7 +773,7 @@ main {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  max-width: 144rem;
+  max-width: 160rem;
   margin: 0 auto;
   border-bottom: 10px inset black;
   border: none;
