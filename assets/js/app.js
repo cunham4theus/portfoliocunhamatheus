@@ -28,7 +28,7 @@ function pageTransition() {
 
 function contentAnimation() {
   var tl = gsap.timeline();
-  tl.from(".animate-this", { duration: 1.2, y: 30, opacity: 0, stagger: 0.4, delay: 0.2 });
+  tl.from(".animate-this", { duration: 0.4, y: 30, opacity: 0, stagger: 0.4, delay: 0 });
 }
 
 $(function () {
@@ -41,7 +41,7 @@ $(function () {
                   const done = this.async();
 
                   pageTransition();
-                  await delay(1000);
+                  await delay(500);
                   done();
               },
 
