@@ -315,9 +315,6 @@ main {
 .techs__banner {
   overflow: hidden;
   white-space: nowrap;
-  max-width: 160rem;
-  margin: 0 auto;
-  border-bottom: 10px inset black;
 }
 .techs__banner--1 {
   display: flex;
