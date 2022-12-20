@@ -28,10 +28,12 @@ xxpx/16px = xxem       |
   }
 
   @if $breakpoint == tab-land {
-    @media (min-width: 75rem) /* 1200px/16px */{
+    @media (min-width: 87.5rem) /* 1400px/16px */{
       @content
     };
   }
+
+
 
 
   @if $breakpoint == big-desktop {

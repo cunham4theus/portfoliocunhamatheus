@@ -29,7 +29,7 @@ xxpx/16px = xxem       |
   font: 500 3.8rem/1.5 "Sarpanch";
   color: rgba(252, 239, 239, 0.9058823529);
 }
-@media (min-width: 75rem) {
+@media (min-width: 87.5rem) {
   .myfont__detailed {
     font-size: 3.2rem;
   }
@@ -46,7 +46,7 @@ html {
     font-size: 50%;
   }
 }
-@media (min-width: 75rem) {
+@media (min-width: 87.5rem) {
   html {
     font-size: 62.5%;
   }
@@ -125,7 +125,7 @@ main {
     height: 28rem;
   }
 }
-@media (min-width: 75rem) {
+@media (min-width: 87.5rem) {
   .header::before {
     display: none;
   }
@@ -220,7 +220,7 @@ main {
 .header__left {
   display: none;
 }
-@media (min-width: 75rem) {
+@media (min-width: 87.5rem) {
   .header__left {
     display: block;
     height: 100%;
@@ -235,7 +235,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media (min-width: 75rem) {
+@media (min-width: 87.5rem) {
   .header__right {
     width: 70%;
   }
@@ -677,6 +677,12 @@ main {
   z-index: 900;
   gap: 2rem;
   padding: 2rem;
+}
+@media (min-width: 37.5rem) {
+  .contact .form {
+    padding: 4rem;
+    width: 80%;
+  }
 }
 @media (min-width: 37.5rem) {
   .contact .form {
