@@ -1,7 +1,7 @@
 @use '../components/mixins' as *;
 
 .techs {
-  width: 100%;  
+  width: 100%;
   background-image: linear-gradient(
     to bottom,
     rgba(#000000, 1),
@@ -9,7 +9,7 @@
   );
   padding-top: 12rem;
   position: relative;
-  margin: 0 auto;  
+  margin: 0 auto;
   max-width: 100%;
   overflow: hidden;
   @include container-size;
@@ -21,25 +21,23 @@
   &__banner {
     overflow: hidden;
     white-space: nowrap;
-   
 
     &--1 {
       display: flex;
       gap: 5rem;
-      animation: floatText 20s infinite linear; 
+      animation: floatText 20s infinite linear;
     }
   }
 
-
   &__text {
-    padding: 2rem;    
+    padding: 2rem;
   }
 
-  p {    
+  p {
     font-size: 2.2rem;
     a {
       font-size: 2.2rem;
-      transition: ease .2s;
+      transition: ease 0.2s;
       &:hover {
         text-decoration: underline;
         color: red;
@@ -56,25 +54,45 @@
   z-index: 2;
   margin: 0 auto;
 
+
   .carousel-item {
-    
     img {
       object-fit: contain;
+      
+    }
+    &::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(
+        to bottom,
+        rgba(#1d0101, 0.3) 40%,
+        rgba(#000000, 0.6) 70%,
+        rgba(#000000, 0.8) 90%
+      );
+      top: 0;
+      left: 0;
+      position: absolute;
+      display: block;
+      opacity: 1;
+      height: 102%;
+      z-index: 1;
+      filter: blur(5px);
     }
   }
 
-  .carousel-control-prev-icon {    
+  .carousel-control-prev-icon {
     width: 7rem;
     height: 7rem;
+    
   }
 
-  .carousel-control-next-icon {   
+  .carousel-control-next-icon {
     width: 7rem;
     height: 7rem;
+    
   }
 }
-
-
 
 @keyframes floatText {
   0% {
@@ -82,7 +100,7 @@
   }
   100% {
     transform: translate(80rem, 20%);
-  } 
+  }
 }
 
 @include respond(tab-port) {
@@ -92,7 +110,6 @@
     }
     100% {
       transform: translate(180rem, 0);
-    }     
-  }   
+    }
+  }
 }
-

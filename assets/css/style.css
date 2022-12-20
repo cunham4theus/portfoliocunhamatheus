@@ -110,25 +110,17 @@ main {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: #000c0f;
-  top: 18rem;
+  background-image: linear-gradient(to bottom, rgba(29, 1, 1, 0.3) 60%, rgba(0, 0, 0, 0.5) 70%, rgba(0, 0, 0, 0.7) 90%);
+  top: 0;
   left: 0;
   position: absolute;
   display: block;
-  opacity: 70%;
-  height: 22rem;
+  opacity: 1;
+  height: 102%;
   z-index: 10;
   filter: blur(5px);
 }
-@media (min-width: 56.2rem) {
-  .header::before {
-    height: 28rem;
-  }
-}
 @media (min-width: 87.5rem) {
-  .header::before {
-    display: none;
-  }
   .header::after {
     content: "";
     width: 100%;
@@ -178,7 +170,7 @@ main {
   background-size: cover;
   opacity: 5;
   z-index: -1;
-  background-image: linear-gradient(to bottom, #01171d, black);
+  background-image: linear-gradient(to bottom, #1d0101, black);
   filter: blur(2px);
 }
 .header__nav--logo {
@@ -346,6 +338,20 @@ main {
 #carouselExampleInterval .carousel-item img {
   object-fit: contain;
 }
+#carouselExampleInterval .carousel-item::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(29, 1, 1, 0.3) 40%, rgba(0, 0, 0, 0.6) 70%, rgba(0, 0, 0, 0.8) 90%);
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: block;
+  opacity: 1;
+  height: 102%;
+  z-index: 1;
+  filter: blur(5px);
+}
 #carouselExampleInterval .carousel-control-prev-icon {
   width: 7rem;
   height: 7rem;
@@ -439,10 +445,25 @@ main {
 }
 .about__image {
   max-width: 60rem;
+  position: relative;
 }
 .about__image img {
   object-fit: cover;
   max-width: 100%;
+}
+.about__image::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(29, 1, 1, 0.3) 70%, rgba(0, 0, 0, 0.6) 80%, rgba(0, 0, 0, 0.8) 90%);
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: block;
+  opacity: 1;
+  height: 102%;
+  z-index: 10;
+  filter: blur(5px);
 }
 
 .projects {
@@ -474,6 +495,7 @@ main {
   }
 }
 .projects__gallery__card {
+  overflow: hidden;
   max-width: 45rem;
   padding: 4rem 0;
   display: grid;
@@ -490,6 +512,8 @@ main {
 }
 .projects__gallery__card--image {
   overflow: hidden;
+  position: relative;
+  transition: all ease 0.2s;
 }
 .projects__gallery__card--image img {
   object-fit: cover;
@@ -497,8 +521,18 @@ main {
   transition: ease 0.3s;
   height: 40rem;
 }
-.projects__gallery__card--image img:hover {
-  transform: rotate(-3deg) scale(1.1);
+.projects__gallery__card--image::after {
+  content: "";
+  width: 103%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(29, 1, 1, 0.3) 30%, rgba(0, 12, 15, 0.6) 70%, rgba(0, 0, 0, 0.8) 90%);
+  top: -1rem;
+  left: -0.5rem;
+  position: absolute;
+  display: block;
+  opacity: 1;
+  z-index: 10;
+  filter: blur(5px);
 }
 .projects__gallery__card--description {
   display: flex;
@@ -536,6 +570,10 @@ main {
 .projects__gallery__card--description a i::before,
 .projects__gallery__card--description a i::after {
   background: #000c0f;
+}
+
+.projects__gallery__card--image:hover {
+  transform: rotate(-1deg) scale(1.05);
 }
 
 .mybtn {
@@ -615,6 +653,19 @@ main {
   overflow: hidden;
   height: 70rem;
   background-image: linear-gradient(to bottom, #01171d, black);
+}
+.contact::before {
+  content: "";
+  width: 103%;
+  height: 100%;
+  background-image: linear-gradient(to top, rgba(29, 1, 1, 0.3) 30%, rgba(0, 12, 15, 0.6) 70%, rgba(0, 0, 0, 0.8) 90%);
+  top: -1rem;
+  left: -0.5rem;
+  position: absolute;
+  display: block;
+  opacity: 1;
+  z-index: 10;
+  filter: blur(5px);
 }
 @media (min-width: 56.2rem) {
   .contact {
@@ -739,13 +790,13 @@ main {
 .contact .form__group button {
   width: 20rem;
   place-self: center;
-  padding: 0.2rem 0;
+  padding: 0;
   font-size: 3.4rem;
 }
 @media (min-width: 37.5rem) {
   .contact .form__group button {
     place-self: end;
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 }
 .contact .form__group button::before {
@@ -866,6 +917,7 @@ main {
   max-width: max-content;
   display: block;
   width: 100%;
+  position: relative;
 }
 @media (min-width: 37.5rem) {
   .techs__info__container--image {
@@ -877,6 +929,20 @@ main {
   max-height: 35rem;
   object-fit: contain;
   object-position: center top;
+}
+.techs__info__container--image::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 20%, rgba(0, 0, 0, 0.4) 70%, rgba(0, 0, 0, 0.6) 90%);
+  top: 0;
+  left: 0;
+  position: absolute;
+  display: block;
+  opacity: 1;
+  height: 102%;
+  z-index: 1;
+  filter: blur(5px);
 }
 .techs__info__container--description {
   -webkit-column-count: 1;
