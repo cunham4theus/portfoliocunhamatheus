@@ -13,11 +13,9 @@
   max-width: 100%;
   overflow: hidden;
   @include container-size;
-
   &__title {
     @include section-title;
   }
-
   &__banner {
     overflow: hidden;
     white-space: nowrap;
@@ -28,11 +26,9 @@
       animation: floatText 20s infinite linear;
     }
   }
-
   &__text {
     padding: 2rem;
   }
-
   p {
     font-size: 2.2rem;
     a {
@@ -45,20 +41,15 @@
     }
   }
 }
-
 // Carousel Techs
-
 #carouselExampleInterval {
   background-color: black;
   position: relative;
   z-index: 2;
   margin: 0 auto;
-
-
   .carousel-item {
     img {
-      object-fit: contain;
-      
+      object-fit: contain;      
     }
     &::after {
       content: '';
@@ -80,20 +71,15 @@
       filter: blur(5px);
     }
   }
-
   .carousel-control-prev-icon {
     width: 7rem;
-    height: 7rem;
-    
+    height: 7rem;    
   }
-
   .carousel-control-next-icon {
     width: 7rem;
-    height: 7rem;
-    
+    height: 7rem;    
   }
 }
-
 @keyframes floatText {
   0% {
     transform: translate(-250rem, 0);
@@ -102,7 +88,6 @@
     transform: translate(80rem, 20%);
   }
 }
-
 @include respond(tab-port) {
   @keyframes floatText {
     0% {

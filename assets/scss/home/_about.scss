@@ -12,44 +12,35 @@
   gap: 6rem;
   align-items: center;
   padding-inline: 2rem ;
-  
-
   background-image: linear-gradient(
     to bottom,
     rgba(#01171d, 1),
     rgba(#000000, 1)
   );
   @include container-size;
-
   @include respond(tab-port) {
     flex-direction: row;
     padding-inline: 2rem;
   }
-
   &__title {
     @include section-title;
   }
-
   &__description {
     max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 3rem;
-
     h2 {
       font-size: 4.8rem;
     }
-
     p {
       max-width: 50ch;
     }
-
     p:last-child {
       font-size: 3rem;
       font-weight: 400;
     }
-
     a {
       text-align: center;
       place-self: end;
@@ -58,7 +49,6 @@
       @include respond(tab-port) {
         padding-inline: 8rem;
       }
-
       &::before {
         background: $mycolor-primary-dark-2;
       }
@@ -68,7 +58,6 @@
       }
     }
   }
-
   &__image {
     max-width: 60rem;
     position: relative;

@@ -12,7 +12,6 @@
   color: #fff;
   width: 100%;
   gap: 6rem;
-
   &__contacts {
     display: flex;
     flex-direction: column;
@@ -25,7 +24,6 @@
     @include respond(phone) {
       flex-direction: row;
     }
-
     &--media {
       display: flex;
       gap: 4rem;
@@ -38,7 +36,6 @@
         }
       }
     }
-
     &--contacts {
       p {
         display: flex;
@@ -51,7 +48,6 @@
       
     }
   }
-
   &__copy {
     font-family: sans-serif;
     display: flex;
@@ -60,7 +56,6 @@
     font-size: 2rem;
     justify-content: center;
     flex-wrap: wrap;
-
     a {
       display: flex;
       gap: 1rem;
@@ -68,7 +63,6 @@
       text-decoration: none;
       color: red;
       transition: ease .2s;
-
       &:hover {
         color: white;
       }

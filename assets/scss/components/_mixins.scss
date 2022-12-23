@@ -20,36 +20,27 @@ xxpx/16px = xxem       |
       @content
     };
   }
-
   @if $breakpoint == tab-port {
     @media (min-width: 56.2rem) /* 900px/16px */{
       @content
     };
   }
-
   @if $breakpoint == tab-land {
     @media (min-width: 87.5rem) /* 1400px/16px */{
       @content
     };
   }
-
-
-
-
   @if $breakpoint == big-desktop {
     @media (min-width: 112.5rem) /* 1800px/16px */{
       @content
     };
   }
 }
-
 @mixin container-size {
   max-width: 160rem;
   margin: 0 auto;
-  border-bottom: 10px inset rgb(black, 1);
- 
+  border-bottom: 10px inset rgb(black, 1); 
 }
-
 @mixin section-title{
   position: absolute;
   right: 4rem;

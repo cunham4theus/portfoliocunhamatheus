@@ -61,7 +61,6 @@
     background-position: center;
     z-index: 2;
     display: none;
-
     @include respond(tab-port) {
       display: block;      
     }
@@ -88,8 +87,7 @@
     text-shadow: 5px 5px 5px black;
     z-index: 900;
     gap: 2rem;   
-    padding: 2rem;
-    
+    padding: 2rem;    
     @include respond(phone) {      
       padding: 4rem;
       width: 80%;
@@ -120,7 +118,6 @@
       );
       filter: blur(2px);
     }
-
     &__group {
       width: 100%;
      display: flex;

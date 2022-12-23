@@ -8,37 +8,26 @@
   letter-spacing: .1rem;
   padding: .2rem .8rem;
   transition: .5s;
-  @include respond(tab-port) {
-    
-  }
-
-  
-
   &:hover {
     letter-spacing: 0.25rem;
     background: red;
     color: red;
     box-shadow: 0 0 35px red;
   }
-
   &::before {
     content: '';
     position: absolute;
     inset: 2px;
-    background: rgb(58, 33, 33); 
-    
+    background: rgb(58, 33, 33);     
   }
-
   span {
     position: relative;
     z-index: 1;
   }
-
   i {
     position: absolute;
     inset: 0;
     display: block;
-
     &::before {
       content: '';
       position: absolute;
@@ -52,7 +41,6 @@
       transition: .5s;    
       opacity: .8;
     }
-
     &::after {
       content: '';
       position: absolute;
@@ -65,8 +53,7 @@
       transform: translate(-50%);
       transition: .5s;
       opacity: .8;
-    }
-  
+    }  
   }
   &:hover i::before {
     width: 3rem;

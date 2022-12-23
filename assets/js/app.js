@@ -6,7 +6,6 @@ function delay(n) {
     }, n);
   });
 }
-
 function pageTransition() {
   var tl = gsap.timeline();
   tl.to('.loading-screen', {
@@ -25,7 +24,6 @@ function pageTransition() {
   });
   tl.set('.loading-screen', { left: '-100%' });
 }
-
 function contentAnimation() {
   var tl = gsap.timeline();
   tl.from('.animate-this', {
@@ -36,7 +34,6 @@ function contentAnimation() {
     delay: 0,
   });
 }
-
 $(function () {
   barba.init({
     sync: true,

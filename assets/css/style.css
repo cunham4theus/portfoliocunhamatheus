@@ -37,6 +37,7 @@ xxpx/16px = xxem       |
 .myfont__detailed::first-letter {
   color: #ee1000;
 }
+
 html {
   scroll-behavior: smooth;
   font-size: 47.5%;
